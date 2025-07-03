@@ -164,10 +164,6 @@ class Generator:
             base_url=OPENROUTER_BASE_URL,
             api_key=OPENROUTER_API_KEY
         )
-        self.extra_headers = {
-            "HTTP-Referer": SITE_URL,
-            "X-Title": SITE_NAME
-        }
         self.model = LLM_MODEL
         self.response_cache = {}
         self.max_retries = MAX_RETRIES
@@ -202,16 +198,17 @@ Question: {query}"""
                         {"role": "system", "content": "You are a helpful assistant that answers questions based on given context."},
                         {"role": "user", "content": prompt}
                     ],
-                    extra_headers=self.extra_headers
+                    extra_headers={
+                        "HTTP-Referer": SITE_URL,
+                        "X-Title": SITE_NAME
+                    }
                 )
                 
                 response = completion.choices[0].message.content
-                if response and len(response.strip()) > 0:
+                if response:
                     print("Successfully generated response")
                     self.response_cache[cache_key] = response
                     return response
-                
-                print("Error: Empty response")
                 
             except Exception as e:
                 print(f"Error in generation attempt {attempt + 1}: {str(e)}")
@@ -287,7 +284,7 @@ class RAGAgent:
 # Update test code with error handling
 try:
     rag_agent = RAGAgent()
-    response = rag_agent.query("is this intership paid?")
+    response = rag_agent.query("what are gonna office hours be like?")
     print("\nResponse:", response)
 except Exception as e:
     print(f"Error running RAG agent: {str(e)}")

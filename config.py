@@ -20,7 +20,7 @@ SITE_NAME = os.getenv("SITE_NAME")
 
 # Model Configuration
 EMBEDDING_MODEL = 'paraphrase-MiniLM-L3-v2'
-LLM_MODEL = "google/gemma-3-4b-it:free"
+LLM_MODEL = "deepseek/deepseek-r1-0528-qwen3-8b:free"
 
 # OpenRouter Configuration
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
