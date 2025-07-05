@@ -1,5 +1,5 @@
-from bot.discord_client import run_discord_bot
-from utils.logger import setup_logger
+from src.bot.discord_client import run_discord_bot
+from src.utils.logger import setup_logger
 
 logger = setup_logger('main')
 

@@ -13,8 +13,8 @@ import discord
 from dotenv import load_dotenv
 from aiohttp_socks import ProxyConnector
 import asyncio
-from logger_config import setup_logger
-from rag import RAGAgent
+from src.utils.logger import setup_logger
+from src.rag.agent import RAGAgent
 from discord import app_commands, Embed, Colour
 import random
 
