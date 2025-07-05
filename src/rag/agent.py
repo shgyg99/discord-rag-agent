@@ -28,7 +28,7 @@ class DocumentLoader:
         self.embedding_model = SentenceTransformer(
             EMBEDDING_MODEL,
             cache_folder=MODEL_CACHE_DIR
-        )
+            )
         
         self.cache_file = cache_file
         self.embedding_cache = self._load_cache()

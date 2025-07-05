@@ -8,15 +8,6 @@ from ..rag.agent import RAGAgent
 from discord import app_commands, Embed, Colour
 import random
 
-import os
-import discord
-from dotenv import load_dotenv
-from aiohttp_socks import ProxyConnector
-import asyncio
-from src.utils.logger import setup_logger
-from src.rag.agent import RAGAgent
-from discord import app_commands, Embed, Colour
-import random
 
 logger = setup_logger('rag_agent')
 rag_agent = RAGAgent()
@@ -74,9 +65,9 @@ async def start_bot():
             if sources:
                 sources_text = ""
                 for i, source in enumerate(sources, 0):  # Start from 0
-                    source_text = source[:500] + "..." if len(source) > 500 else source
+                    source_text = source[:5000] + "..." if len(source) > 5000 else source
                     sources_text += f"{i}. {source_text}\n"
-                embed.add_field(name="Sources", value=sources_text[:1024], inline=False)
+                embed.add_field(name="Sources", value=sources_text[:3000], inline=False)
             
             response = await ctx.followup.send(embed=embed) if isinstance(ctx, discord.Interaction) else await ctx.channel.send(embed=embed)
             await response.add_reaction("👍")
@@ -102,7 +93,7 @@ async def start_bot():
         embed.add_field(name="Feedback", value="React with 👍 or 👎", inline=False)
         await interaction.response.send_message(embed=embed)
 
-    connector = ProxyConnector.from_url('socks5://127.0.0.1:12334')
+    connector = ProxyConnector.from_url(os.getenv('PROXY_URL'))
     client.http.connector = connector
     await client.start(TOKEN)
 
