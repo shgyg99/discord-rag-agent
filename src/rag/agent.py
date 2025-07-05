@@ -7,10 +7,7 @@ import numpy as np
 import faiss
 import pickle
 import time
-import requests
-from config import *
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import torch
+from ..config.settings import *
 from openai import OpenAI
 
 
@@ -23,9 +20,8 @@ class DocumentLoader:
         )
         self.embeddings = []
         
-        # Create cache directories
+        # Create cache directory
         os.makedirs(MODEL_CACHE_DIR, exist_ok=True)
-        os.makedirs(EMBEDDINGS_CACHE_DIR, exist_ok=True)
         
         # Initialize sentence transformer
         print("Loading sentence transformer model...")
@@ -60,15 +56,6 @@ class DocumentLoader:
         except Exception as e:
             print(f"Error generating embedding: {e}")
             return [hash(text) % 1024 for _ in range(384)]  # MiniLM uses 384 dimensions
-
-    def generate_embeddings_batch(self, texts: List[str]) -> List[List[float]]:
-        """Generate embeddings for multiple texts in one batch."""
-        try:
-            embeddings = self.embedding_model.encode(texts, convert_to_tensor=False)
-            return embeddings.tolist()
-        except Exception as e:
-            print(f"Error generating batch embeddings: {e}")
-            return [[hash(text) % 1024 for _ in range(384)] for text in texts]
 
     def load_and_chunk_documents(self) -> Tuple[List[str], List[List[float]]]:
         start_time = time.time()
@@ -281,10 +268,3 @@ class RAGAgent:
             return "An error occurred while processing your request. Please try again."
 
 
-# Update test code with error handling
-try:
-    rag_agent = RAGAgent()
-    response = rag_agent.query("what are gonna office hours be like?")
-    print("\nResponse:", response)
-except Exception as e:
-    print(f"Error running RAG agent: {str(e)}")

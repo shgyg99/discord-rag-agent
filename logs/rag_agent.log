@@ -1,0 +1,202 @@
+{"timestamp": "2025-07-04T06:07:02.280056", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:02.281811", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5001", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:02.282822", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5001", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:02.953473", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:02.955179", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5002", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:02.955415", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5002", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:32.005726", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:32.007670", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5001", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:32.008351", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5001", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:32.619463", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:32.622382", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5002", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:07:32.622592", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5002", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:31.639881", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:31.642720", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5002", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:31.642940", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5002", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:32.275408", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:32.277783", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5003", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:32.278775", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5003", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:58.220626", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:58.223823", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5002", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:58.224184", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5002", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:58.825225", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:58.828316", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5003", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:08:58.828518", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5003", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:09:35.218461", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:09:35.221887", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5003", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:09:35.222240", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5003", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:09:35.849570", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:09:35.852871", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5004", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:09:35.853311", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5004", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:10:11.805409", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:10:11.808527", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5004", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:10:11.808841", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5004", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:10:12.421523", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:10:12.424428", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5005", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:10:12.424643", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5005", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:10.051146", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:10.054510", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5005", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:10.054772", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5005", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:10.669425", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:10.673073", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5006", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:10.673392", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5006", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:41.930460", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:41.933814", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5006", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:41.934089", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5006", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:42.567524", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:42.570727", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5007", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:12:42.570979", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5007", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:14:35.978474", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:14:35.981330", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5007", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:14:35.981521", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5007", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:14:36.561264", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:14:36.564457", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5008", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:14:36.564725", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5008", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:03.894097", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:03.896836", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5008", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:03.897102", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5008", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:04.469340", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:04.472274", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:04.474981", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:14.337462", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:14.341476", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:14.341840", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:14.963331", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:14.966842", "level": "ERROR", "name": "rag_agent", "message": "Failed to start server: Could not find available port after 10 attempts", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:15:14.967225", "level": "INFO", "name": "rag_agent", "message": "Shutting down Discord bot", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:19:59.587196", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:19:59.590387", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:19:59.590627", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:20:00.227358", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:20:00.229098", "level": "ERROR", "name": "rag_agent", "message": "Failed to start server: Could not find available port after 10 attempts", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:20:00.233240", "level": "INFO", "name": "rag_agent", "message": "Shutting down Discord bot", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:05.628626", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:05.631910", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:05.632145", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:06.281421", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:06.285019", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5010", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:06.287247", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5010", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:21.448838", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:21.452031", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:21.452248", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5009", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:22.049817", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:22.053265", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5010", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:21:22.053491", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5010", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:22:34.412119", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:22:34.415975", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5010", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:22:34.416306", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5010", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:22:35.077928", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:22:35.081394", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5011", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:22:35.081667", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5011", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:24:55.725813", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:24:55.729220", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5011", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:24:55.729583", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5011", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:24:56.342341", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:24:56.345932", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5012", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:24:56.346267", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5012", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:04.164487", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:04.167851", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5012", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:04.168084", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5012", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:04.785762", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:04.788424", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5013", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:04.788684", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5013", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:13.207126", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:13.210661", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5013", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:13.210878", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5013", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:13.879397", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:13.881694", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:13.881923", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:24.546968", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:24.550735", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:24.550982", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:25.241876", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:25.245231", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5015", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:25:25.245433", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5015", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:22.024404", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:22.027550", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5015", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:22.027738", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5015", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:22.684884", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:22.688099", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5016", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:22.688345", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5016", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:39.117830", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:39.122096", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5016", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:39.122322", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5016", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:39.803378", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:39.807675", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5017", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:39.807889", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5017", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:54.284471", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:54.287595", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5017", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:54.287839", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5017", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:54.917835", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:54.921719", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5018", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:37:54.921923", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5018", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:38:28.327216", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:38:28.331233", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5018", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:38:28.331460", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5018", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:38:28.984635", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:38:28.988783", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5019", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:38:28.989086", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5019", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:34.114364", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:34.118342", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5019", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:34.118656", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5019", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:34.778945", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:34.783337", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5020", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:34.783544", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5020", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:50.542262", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:50.546258", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5020", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:50.546557", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5020", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:51.195702", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:51.199664", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5021", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:39:51.199921", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5021", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:43:46.483789", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:43:46.487272", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5021", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:43:46.487550", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5021", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:43:47.205093", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:43:47.208951", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5022", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:43:47.209204", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5022", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:44:08.526665", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:44:08.530421", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5022", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:44:08.530685", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5022", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:44:09.196672", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:44:09.200577", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5023", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:44:09.200804", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5023", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:58:49.785135", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:58:49.786209", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5013", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T06:58:49.786410", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5013", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:00:31.404424", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:00:31.405440", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:00:31.405623", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:08:44.938167", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:08:44.940642", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:08:44.941372", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:08:44.941531", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:15:43.572048", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:15:43.573882", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:15:43.574627", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:15:43.574828", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5014", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:16:21.140295", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:16:21.141083", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:16:21.141884", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5015", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T07:16:21.142120", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5015", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T11:12:58.062228", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T11:12:58.064244", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5000", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T11:14:05.051205", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T11:14:05.053076", "level": "WARNING", "name": "rag_agent", "message": "Port 5000 is in use, attempting to find available port in range 5000-5049", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T11:14:05.053550", "level": "INFO", "name": "rag_agent", "message": "Found available port: 5001", "logger": "rag_agent"}
+{"timestamp": "2025-07-04T11:14:05.053838", "level": "INFO", "name": "rag_agent", "message": "Starting server on 0.0.0.0:5001", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T06:40:24.996750", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T06:40:24.999058", "level": "INFO", "name": "rag_agent", "message": "Discord bot is running.", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:06:08.521857", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:06:08.522996", "level": "INFO", "name": "rag_agent", "message": "Discord bot is running.", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:11:51.080608", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:11:51.081983", "level": "INFO", "name": "rag_agent", "message": "Discord bot is running.", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:12:21.515966", "level": "INFO", "name": "rag_agent", "message": "Processed message: 'when we are gonna start' from shgyg990800", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:18:21.274348", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:18:21.276225", "level": "INFO", "name": "rag_agent", "message": "Discord bot is running.", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:24:08.763462", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:24:08.765835", "level": "INFO", "name": "rag_agent", "message": "Discord bot is running.", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:25:36.102604", "level": "INFO", "name": "rag_agent", "message": "Processed query: 'hi'", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:30:32.911317", "level": "INFO", "name": "rag_agent", "message": "Discord bot thread started successfully", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:30:32.913109", "level": "INFO", "name": "rag_agent", "message": "Discord bot is running.", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:31:45.265549", "level": "INFO", "name": "rag_agent", "message": "Processed query: 'how i gonna create discord rag bot?'", "logger": "rag_agent"}
+{"timestamp": "2025-07-05T07:31:54.350656", "level": "INFO", "name": "rag_agent", "message": "Received positive feedback from shgyg990800", "logger": "rag_agent"}
