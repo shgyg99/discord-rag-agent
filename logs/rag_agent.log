@@ -201,3 +201,4 @@
 {"timestamp": "2025-07-05T07:31:45.265549", "level": "INFO", "name": "rag_agent", "message": "Processed query: 'how i gonna create discord rag bot?'", "logger": "rag_agent"}
 {"timestamp": "2025-07-05T07:31:54.350656", "level": "INFO", "name": "rag_agent", "message": "Received positive feedback from shgyg990800", "logger": "rag_agent"}
 {"timestamp": "2025-07-05T14:55:14.134826", "level": "ERROR", "name": "rag_agent", "message": "Error: 'str' object has no attribute 'add_reaction'", "logger": "rag_agent"}
+{"timestamp": "2025-07-06T07:29:17.339669", "level": "ERROR", "name": "rag_agent", "message": "Error: 400 Bad Request (error code: 50035): Invalid Form Body\nIn embeds.0.fields.0.value: Must be 1024 or fewer in length.", "logger": "rag_agent"}

@@ -12,3 +12,4 @@ venv/
 .docker
 Dockerfile
 README.md
+prometheus/

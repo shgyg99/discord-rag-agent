@@ -1,4 +1,5 @@
 import os
+import time
 import discord
 from dotenv import load_dotenv
 from aiohttp_socks import ProxyConnector
@@ -7,13 +8,23 @@ from ..utils.logger import setup_logger
 from ..rag.agent import RAGAgent
 from discord import app_commands, Embed, Colour
 import random
-
+from prometheus_client import start_http_server, Counter, Gauge
 
 logger = setup_logger('rag_agent')
 rag_agent = RAGAgent()
 
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
+
+request_count = Counter('request_count', 'Number of requests processed')
+error_count = Counter('error_count', 'Number of errors encountered')
+query_processing_latency = Gauge('query_processing_latency', 'Latency of query processing in ms')
+positive_feedback_count = Counter('positive_feedback_count', 'Number of positive feedback received')
+negative_feedback_count = Counter('negative_feedback_count', 'Number of negative feedback received') 
+
+
+start_http_server(9091)
+
 
 CHAT_RESPONSES = [
     "Hi there! How can I help you today? 🙂",
@@ -23,6 +34,7 @@ CHAT_RESPONSES = [
 
 intents = discord.Intents.default()
 intents.message_content = True
+intents.reactions = True
 
 class RAGBot(discord.Client):
     def __init__(self):
@@ -50,29 +62,49 @@ async def start_bot():
 
     @client.event
     async def on_message(message):
+
         if message.author == client.user:
             return
         if isinstance(message.channel, discord.DMChannel) or client.user in message.mentions:
             await message.channel.send(random.choice(CHAT_RESPONSES))
 
+
+    @client.event
+    async def on_reaction_add(reaction, user):
+        # Ignore bot's own reactions
+        if user == client.user:
+            return
+            
+        # Only process reactions on bot's messages
+        if reaction.message.author == client.user:
+            if str(reaction.emoji) == '👍':
+                positive_feedback_count.inc()
+                await reaction.message.channel.send(f"Thank you for your positive feedback {user.mention}! 😊")
+                
+            elif str(reaction.emoji) == '👎':
+                negative_feedback_count.inc()
+                feedback_message = (
+                    f"I'm sorry my answer wasn't helpful {user.mention}!\n"
+                    "Please try asking your question more specifically or use the `/ask` command again."
+                )
+                await reaction.message.channel.send(feedback_message)
+
     async def process_query(ctx, query: str):
+
+        request_count.inc()
+        start_time = time.time()
         try:
-            answer = rag_agent.query(query)
-            sources = rag_agent.retriever.retrieve(query)
+            answer = rag_agent.query(query)            
+            embed = Embed(description=answer, color=Colour.blue())
             
-            embed = Embed(title="📚 Answer", description=answer, color=Colour.blue())
-            
-            if sources:
-                sources_text = ""
-                for i, source in enumerate(sources, 0):  # Start from 0
-                    source_text = source[:5000] + "..." if len(source) > 5000 else source
-                    sources_text += f"{i}. {source_text}\n"
-                embed.add_field(name="Sources", value=sources_text[:3000], inline=False)
             
             response = await ctx.followup.send(embed=embed) if isinstance(ctx, discord.Interaction) else await ctx.channel.send(embed=embed)
             await response.add_reaction("👍")
             await response.add_reaction("👎")
-            
+
+            end_time = time.time()
+            query_processing_latency.set((end_time - start_time) * 1000)
+
         except Exception as e:
             logger.error(f"Error: {str(e)}")
             error_msg = "Sorry, I encountered an error processing your request."
@@ -80,6 +112,7 @@ async def start_bot():
                 await ctx.followup.send(error_msg, ephemeral=True)
             else:
                 await ctx.channel.send(error_msg)
+            error_count.inc()
 
     @client.tree.command(name="ask", description="Ask a question")
     async def ask(interaction: discord.Interaction, question: str):
@@ -103,5 +136,6 @@ def run_discord_bot():
 if __name__ == '__main__':
     try:
         run_discord_bot()
+
     except KeyboardInterrupt:
         print("Shutting down...")
