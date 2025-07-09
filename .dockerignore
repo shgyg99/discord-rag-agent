@@ -5,11 +5,9 @@ __pycache__
 .Python
 env/
 venv/
-.env
 *.log
 .git
 .gitignore
 .docker
 Dockerfile
 README.md
-prometheus/

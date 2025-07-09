@@ -10,15 +10,12 @@ RUN apt-get update && \
 # Copy and install requirements
 COPY requirements.txt .
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --default-timeout=100 -r requirements.txt && \
+    pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cpu
 
-# Copy application code
-COPY src/ /app/src/
 
-# Create directories with correct permissions
-RUN mkdir -p /app/cache /app/docs /app/logs && \
-    adduser --disabled-password --gecos "" appuser && \
-    chown -R appuser:appuser /app
+COPY . /app/
+
 
 # Environment variables
 ENV PYTHONPATH=/app \
@@ -26,6 +23,5 @@ ENV PYTHONPATH=/app \
     DOCS_DIR=/app/docs \
     MODEL_CACHE_DIR=/app/cache/models
 
-USER appuser
 
 CMD ["python", "-u", "src/main.py"]
