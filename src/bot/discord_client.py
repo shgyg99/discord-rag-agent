@@ -90,15 +90,55 @@ async def start_bot():
                 await reaction.message.channel.send(feedback_message)
 
     async def process_query(ctx, query: str):
-
         request_count.inc()
         start_time = time.time()
         try:
-            answer = rag_agent.query(query)            
-            embed = Embed(description=answer, color=Colour.blue())
+            # دریافت پاسخ از RAG Agent
+            answer = rag_agent.query(query)
             
+            # اگر پاسخ خیلی کوتاه باشد، ساختار پیش‌فرض را اضافه می‌کنیم
+            if len(answer) < 100:
+                answer = (
+                    "🤖 **Answer**\n"
+                    f"{answer}\n\n"
+                    "📚 **Sources**\n"
+                    "- Context from knowledge base\n"
+                    "🔗 **Related Links**\n"
+                    "- [AI PM Bootcamp Playlist](https://youtube.com/playlist?list=example)"
+                )
             
-            response = await ctx.followup.send(embed=embed) if isinstance(ctx, discord.Interaction) else await ctx.channel.send(embed=embed)
+            # بررسی طول پاسخ برای تقسیم به چند embed در صورت نیاز
+            if len(answer) <= 4096:  # حداکثر طول مجاز embed
+                embed = Embed(description=answer, color=Colour.blue())
+                if isinstance(ctx, discord.Interaction):
+                    response = await ctx.followup.send(embed=embed)
+                else:
+                    response = await ctx.channel.send(embed=embed)
+            else:
+                # اگر پاسخ خیلی طولانی است، آن را به چند بخش تقسیم می‌کنیم
+                chunks = [answer[i:i+2000] for i in range(0, len(answer), 2000)]
+                for i, chunk in enumerate(chunks):
+                    if i == 0:
+                        embed = Embed(
+                            title=f"📚 Answer (Part {i+1}/{len(chunks)})",
+                            description=chunk,
+                            color=Colour.blue()
+                        )
+                        if isinstance(ctx, discord.Interaction):
+                            response = await ctx.followup.send(embed=embed)
+                        else:
+                            response = await ctx.channel.send(embed=embed)
+                    else:
+                        embed = Embed(
+                            description=chunk,
+                            color=Colour.blue()
+                        )
+                        if isinstance(ctx, discord.Interaction):
+                            await ctx.followup.send(embed=embed)
+                        else:
+                            await ctx.channel.send(embed=embed)
+            
+            # افزودن واکنش‌ها به اولین پیام
             await response.add_reaction("👍")
             await response.add_reaction("👎")
 
@@ -107,7 +147,10 @@ async def start_bot():
 
         except Exception as e:
             logger.error(f"Error: {str(e)}")
-            error_msg = "Sorry, I encountered an error processing your request."
+            error_msg = (
+                "Sorry, I encountered an error processing your request.\n"
+                "Please try again or ask more specifically."
+            )
             if isinstance(ctx, discord.Interaction):
                 await ctx.followup.send(error_msg, ephemeral=True)
             else:

@@ -9,7 +9,8 @@ import pickle
 import time
 from ..config.settings import *
 from openai import OpenAI
-
+import re
+from urlextract import URLExtract
 
 class DocumentLoader:
     def __init__(self, docs_dir: str = DOCS_DIR, cache_file: str = CACHE_FILE):
@@ -230,8 +231,23 @@ class RAGAgent:
 
         print(f"Initialization complete! Time taken: {time.time() - start_time:.2f} seconds\n")
 
+    def extract_urls(self, text):
+        """استخراج لینک‌ها از متن با دقت بالا"""
+        extractor = URLExtract()
+        urls = extractor.find_urls(text)
+        return list(set(urls))  # حذف لینک‌های تکراری
+
+    def format_sources(self, docs):
+        """قالب‌بندی منابع برای نمایش خوانا"""
+        sources = []
+        for i, doc in enumerate(docs[:3]):  # حداکثر ۳ منبع
+            # خلاصه‌سازی متن منبع
+            summary = doc[:150] + "..." if len(doc) > 150 else doc
+            sources.append(f"{i+1}. {summary}")
+        return sources
+
     def query(self, input_text: str) -> str:
-        """Execute the full RAG chain with detailed logging."""
+        """Execute the full RAG chain with detailed output formatting"""
         try:
             print(f"\n{'=' * 50}")
             print(f"Processing query: '{input_text}'")
@@ -241,30 +257,51 @@ class RAGAgent:
             retrieval_start = time.time()
             relevant_docs = self.retriever.retrieve(input_text, k=DEFAULT_TOP_K)
 
+            # استخراج لینک‌ها از اسناد
+            all_links = []
+            for doc in relevant_docs:
+                all_links.extend(self.extract_urls(doc))
+            unique_links = list(set(all_links))[:5]  # حداکثر ۵ لینک منحصر به فرد
+
             # Truncate context if too long
             total_context = " ".join(relevant_docs)
             if len(total_context) > self.max_context_length:
                 relevant_docs = relevant_docs[:2]  # Further limit context
 
             print(f"Found {len(relevant_docs)} relevant documents")
+            print(f"Retrieved {len(unique_links)} unique links")
             print(f"Retrieval time: {time.time() - retrieval_start:.2f} seconds")
 
             if not relevant_docs:
                 print("No relevant documents found!")
-                return "I'm sorry, I couldn't find relevant information to answer your question."
+                return "🤖 **Answer**\nI'm sorry, I couldn't find relevant information to answer your question."
 
             print("\n2. Generating response...")
             generation_start = time.time()
-            response = self.generator.generate(input_text, relevant_docs)
-            if not response:
-                return "I apologize, but I couldn't generate a response. Please try again."
+            generated_response = self.generator.generate(input_text, relevant_docs)
+            
+            if not generated_response:
+                return "🤖 **Answer**\nI apologize, but I couldn't generate a response. Please try again."
+            
             print(f"Generation time: {time.time() - generation_start:.2f} seconds")
+
+            # ساختاردهی پاسخ نهایی
+            formatted_response = "🤖 **Answer**\n"
+            formatted_response += f"{generated_response}\n\n"
+            
+            # بخش منابع
+            formatted_response += "📚 **Sources**\n"
+            formatted_response += "\n".join(self.format_sources(relevant_docs)) + "\n\n"
+            
+            # بخش لینک‌ها
+            if unique_links:
+                formatted_response += "🔗 **Related Links**\n"
+                for link in unique_links:
+                    formatted_response += f"- [{link.split('//')[-1].split('/')[0]}]({link})\n"
 
             print(f"\nTotal processing time: {time.time() - start_time:.2f} seconds")
             print(f"{'=' * 50}\n")
-            return response
+            return formatted_response
         except Exception as e:
             print(f"Error in RAG chain: {str(e)}")
-            return "An error occurred while processing your request. Please try again."
-
-
+            return "🤖 **Answer**\nAn error occurred while processing your request. Please try again."
