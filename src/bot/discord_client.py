@@ -71,11 +71,9 @@ async def start_bot():
 
     @client.event
     async def on_reaction_add(reaction, user):
-        # Ignore bot's own reactions
         if user == client.user:
             return
             
-        # Only process reactions on bot's messages
         if reaction.message.author == client.user:
             if str(reaction.emoji) == '👍':
                 positive_feedback_count.inc()
@@ -93,10 +91,8 @@ async def start_bot():
         request_count.inc()
         start_time = time.time()
         try:
-            # دریافت پاسخ از RAG Agent
             answer = rag_agent.query(query)
             
-            # اگر پاسخ خیلی کوتاه باشد، ساختار پیش‌فرض را اضافه می‌کنیم
             if len(answer) < 100:
                 answer = (
                     "🤖 **Answer**\n"
@@ -107,15 +103,13 @@ async def start_bot():
                     "- [AI PM Bootcamp Playlist](https://youtube.com/playlist?list=example)"
                 )
             
-            # بررسی طول پاسخ برای تقسیم به چند embed در صورت نیاز
-            if len(answer) <= 4096:  # حداکثر طول مجاز embed
+            if len(answer) <= 4096: 
                 embed = Embed(description=answer, color=Colour.blue())
                 if isinstance(ctx, discord.Interaction):
                     response = await ctx.followup.send(embed=embed)
                 else:
                     response = await ctx.channel.send(embed=embed)
             else:
-                # اگر پاسخ خیلی طولانی است، آن را به چند بخش تقسیم می‌کنیم
                 chunks = [answer[i:i+2000] for i in range(0, len(answer), 2000)]
                 for i, chunk in enumerate(chunks):
                     if i == 0:
@@ -138,7 +132,6 @@ async def start_bot():
                         else:
                             await ctx.channel.send(embed=embed)
             
-            # افزودن واکنش‌ها به اولین پیام
             await response.add_reaction("👍")
             await response.add_reaction("👎")
 

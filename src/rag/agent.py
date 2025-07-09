@@ -232,16 +232,13 @@ class RAGAgent:
         print(f"Initialization complete! Time taken: {time.time() - start_time:.2f} seconds\n")
 
     def extract_urls(self, text):
-        """استخراج لینک‌ها از متن با دقت بالا"""
         extractor = URLExtract()
         urls = extractor.find_urls(text)
-        return list(set(urls))  # حذف لینک‌های تکراری
+        return list(set(urls)) 
 
     def format_sources(self, docs):
-        """قالب‌بندی منابع برای نمایش خوانا"""
         sources = []
-        for i, doc in enumerate(docs[:3]):  # حداکثر ۳ منبع
-            # خلاصه‌سازی متن منبع
+        for i, doc in enumerate(docs[:3]): 
             summary = doc[:150] + "..." if len(doc) > 150 else doc
             sources.append(f"{i+1}. {summary}")
         return sources
@@ -257,11 +254,10 @@ class RAGAgent:
             retrieval_start = time.time()
             relevant_docs = self.retriever.retrieve(input_text, k=DEFAULT_TOP_K)
 
-            # استخراج لینک‌ها از اسناد
             all_links = []
             for doc in relevant_docs:
                 all_links.extend(self.extract_urls(doc))
-            unique_links = list(set(all_links))[:5]  # حداکثر ۵ لینک منحصر به فرد
+            unique_links = list(set(all_links))[:5]  
 
             # Truncate context if too long
             total_context = " ".join(relevant_docs)
@@ -285,15 +281,12 @@ class RAGAgent:
             
             print(f"Generation time: {time.time() - generation_start:.2f} seconds")
 
-            # ساختاردهی پاسخ نهایی
             formatted_response = "🤖 **Answer**\n"
             formatted_response += f"{generated_response}\n\n"
             
-            # بخش منابع
             formatted_response += "📚 **Sources**\n"
             formatted_response += "\n".join(self.format_sources(relevant_docs)) + "\n\n"
             
-            # بخش لینک‌ها
             if unique_links:
                 formatted_response += "🔗 **Related Links**\n"
                 for link in unique_links:
