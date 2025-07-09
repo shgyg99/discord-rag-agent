@@ -10,9 +10,11 @@ RUN apt-get update && \
 # Copy and install requirements
 COPY requirements.txt .
 RUN pip install --upgrade pip && \
-    pip install --default-timeout=100 -r requirements.txt && \
-    pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cpu
+    pip install --no-cache-dir --default-timeout=100 -r requirements.txt
 
+
+
+# RUN pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cpu
 
 COPY . /app/
 
