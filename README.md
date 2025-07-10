@@ -191,11 +191,9 @@ discord-rag-agent/
 │   └── main.py           # Application entry point
 ├── docs/                 # Knowledge base (.txt files)
 ├── cache/                # Embedding cache
-├── tests/                # Unit tests
 ├── Dockerfile            # Container configuration
 ├── requirements.txt      # Python dependencies
-├── .env                  # Environment configuration
-└── prometheus.yml        # Monitoring setup
+└── .env                  # Environment configuration
 ```
 
 ## 🔧 Troubleshooting
