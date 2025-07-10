@@ -28,7 +28,7 @@
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/yourusername/discord-rag-agent.git
+git clone https://github.com/shgyg99/discord-rag-agent.git
 cd discord-rag-agent
 
 # 2. Create virtual environment
@@ -127,7 +127,6 @@ We provide a pre-configured dashboard for monitoring your RAG bot. [Download the
 2. Either:
    - Upload the JSON file
    - Paste the JSON content directly
-   - Use dashboard ID `18983` (if published to Grafana)
 
 #### 2. Configure Data Source
 Ensure you have a Prometheus data source configured:
