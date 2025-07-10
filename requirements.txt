@@ -56,6 +56,7 @@ openai==1.93.0
 orjson==3.10.18
 packaging==24.2
 pillow==11.3.0
+platformdirs==4.3.8
 prometheus_client==0.22.1
 propcache==0.3.2
 pydantic==2.11.7
@@ -82,12 +83,15 @@ sympy==1.14.0
 tenacity==9.1.2
 threadpoolctl==3.6.0
 tokenizers==0.21.2
+torch==2.7.1+cpu
 tqdm==4.67.1
 transformers==4.53.0
 triton==3.3.1
 types-python-dateutil==2.9.0.20250516
 typing-inspection==0.4.1
 typing_extensions==4.14.0
+uritools==5.0.0
+urlextract==1.9.0
 urllib3==2.5.0
 yarl==1.20.1
 zstandard==0.23.0
