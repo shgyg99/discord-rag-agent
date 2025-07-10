@@ -118,7 +118,7 @@ scrape_configs:
 
 ### Dashboard JSON Export
 We provide a pre-configured dashboard for monitoring your RAG bot. [Download the dashboard JSON here](Dashboard.json).
-```
+
 
 ### Complete Dashboard Setup Guide
 
